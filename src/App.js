@@ -13,6 +13,7 @@ import google from './google.com (1).png'
 import { useEffect, useState } from 'react';
 import Contacts from './Contacts';
 import dish from './dish.png'
+import { Badge } from 'react-bootstrap';
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
             <NavLink to="/" className='link'>Home</NavLink>
             <NavLink to="/recipes" className='link'>Recipes</NavLink>
             <NavLink to="/menu" className='link'>Plan menu</NavLink>
-            <NavLink to="/shoppingList" className='link'>Shopping list <span className='count-items'>{myList.length}</span></NavLink>
+            <NavLink to="/shoppingList" className='link'>Shopping list <Badge className='count-items' bg="secondary">{myList.length}</Badge></NavLink>
           </nav>
         </div>
       

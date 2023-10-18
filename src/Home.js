@@ -13,20 +13,19 @@ function Home() {
     useEffect(() => {
     const title = titleRef.current;
     gsap.to(title, {
-        text: "Welcome to my portfolio",
-        duration: 4,
-        delay: 9.2,  
+        text: "👨‍🍳 Welcome to the menu planer",
+        duration: 4, 
         ease: 'power1.in',
-        repeat: 0,
+        repeat: 2,
         repeatDelay: .7,
-        yoyo: false,
+        yoyo: true
     });
     }, []);
 
     return(
         <div>
             <div className="welcome-container">
-                <h1 ref={titleRef}>👨‍🍳 Welcome to the menu planer</h1>
+                <h1 ref={titleRef}> </h1>
             </div>
             <div className="center">
                 <div className="carusel-container">

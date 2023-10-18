@@ -6,7 +6,7 @@ const Content = ({setIsOpen, ingredients}) => {
                     <li key = {index}>{ingredient}</li>
                 ))}
             </ul>
-            <button className="btn-ingr" onClick = {() => setIsOpen(false)}>Close modal</button>
+            <button className="btn-ingr" onClick = {() => setIsOpen(false)}>Close</button>
         </div>
     )
 }

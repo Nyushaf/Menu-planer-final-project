@@ -30,6 +30,7 @@ h1 {
 .welcome-container {
   background-color: white;
   margin: 0;
+  height: 110px;
 }
 .center {
   display: flex;
@@ -119,7 +120,7 @@ h1 {
   background-color: #FFFFFF;
   font-size: 15px;
   width: 50%;
-  height: 60%;
+  height: 70%;
   border-radius: 15px;
   }
 
@@ -183,13 +184,13 @@ hr {
 .selected {
   border-radius: 20px;
   background-color: #fcfaef;
-  border: 2px solid #4f8679;
+  border: 4px solid #4f8679;
   padding: 2px;
   margin-top: 5px;
 }
 .default {
   border-radius: 20px;
-  background-color: #445069;
+  background-color: rgb(201, 201, 201);
   padding: 2px;
   margin-top: 5px;
 }
@@ -202,10 +203,18 @@ hr {
   background-color: #fcfaef;
 }
 .default-btn {
-  background-color: #445069;
+  background-color: rgb(201, 201, 201);
 }
 .title {
   margin: 3px;
+  font-size: 14px;
+}
+.title-day {
+  font-size: 16px;
+  font-weight: bolder;
+}
+.meal {
+  font-size: 14px;
 }
 .myInput {
   margin-left: 10px;
@@ -215,12 +224,16 @@ hr {
   border-radius: 10px;
   margin-top: 30px;
   background-color: #fcfaef;
+  border: 4px solid #4f8679;
+}
+.textarea {
+  width: 45%;
 }
 textarea {
-  border: 1px solid #ddd;
+  border: 4px solid #4f8679;
   padding: 10px;
   margin-top: 30px;
-  width: 45%;
+  width: 100%;
   height: 80px;
   border-radius: 10px;
   margin-left: 5px;
@@ -282,7 +295,7 @@ li {
   border: none;
 }
 .count-items {
-  color: #4f8679;
+  color: #fcfaef;
   font-size: 13px;
   font-weight: bold;
 }

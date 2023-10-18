@@ -1,3 +1,5 @@
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
+
 const MyMealsAndIngredients = ({selectedDay, updateDay, setMyList, myList}) => {
 
     const editMyMeal = (myInput, value) => {
@@ -32,19 +34,29 @@ const MyMealsAndIngredients = ({selectedDay, updateDay, setMyList, myList}) => {
                 />
             </div>
             <div className="cont-textarea">
+            <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">✦ Add your meai for the day</Tooltip>}>
+                <span className="d-inline-block textarea">
                 <textarea 
                 placeholder="Write your meal plan here..."
                 id="mealForADay"
                 value={selectedDay.mealForADay}
                 onChange={(e) => editMyMeal("mealForADay", e.target.value)}
                 />
-
+                </span>
+            </OverlayTrigger>
+                
+            <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">✦ Enter the ingredients separated by commas</Tooltip>}>
+                <span className="d-inline-block textarea">
                 <textarea 
                 placeholder="List of ingredients..."
                 id="ingredients"
                 value={selectedDay.ingredients}
                 onChange={(e) => editMyMeal("ingredients", e.target.value)}
                 />
+                </span>
+            </OverlayTrigger>
+
+                
             </div>
             <div className="btn-position">
                 <button className="btn-add-to-list" onClick={() => addIngredients(selectedDay.ingredients)}>Add to Shopping List</button>
