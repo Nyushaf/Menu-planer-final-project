@@ -40,7 +40,7 @@ function Home() {
             <br />
             <div className="about-color">
                 <div className="center">
-                    <h3 className="how-to-use">How to use.</h3>
+                    <h3 className="how-to-use">How to use</h3>
                 </div>
             <div className="about-cont">
                 <div className="about">
