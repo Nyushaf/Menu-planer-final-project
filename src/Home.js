@@ -53,7 +53,7 @@ function Home() {
                 </div>
                 <div className="about">
                     <img src={plan} alt="plan" width="350px"/>
-                    <p>Make a menu for each day. Simply add a new day using the Add Day button. Enter all the meals for that day in the corresponding field. Write down the ingredients you will need. If necessary, you can add ingredients to your shopping list.</p>
+                    <p>Make a menu for each day. Simply add a new day using the Add Day button. Click on the day you want to edit. Enter all the meals for that day in the corresponding field. Write down the ingredients you will need. If necessary, you can add ingredients to your shopping list.</p>
                 </div>
                 <div className="about">
                     <img src={list} alt="list" width="350px"/>
