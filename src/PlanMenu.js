@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import MyList from './MyList';
 import MyMealsAndIngredients from './MyMealsAndIngredients';
-import meal from './meal.png';
+import meal from './Image/meal.png';
 
 
 function PlanMenu({myList, setMyList}) {
@@ -46,13 +46,14 @@ function PlanMenu({myList, setMyList}) {
     }, [mealPlans])
     
     return(
-        <div>
+        <div className='recipe-container'>
             <div className="center">
                 <h2 className='cont-plan-meny'>Create Your Weekly Meal Plan</h2>
             </div>
             <div className="center">
                 <button className="btn-ingr" onClick={addMeal}>Add Day <img src={meal} alt="meal" width="50px" /></button>
             </div>
+            <br />
             <div>
                 <MyMealsAndIngredients
                 selectedDay = {getActiveMeal()}
@@ -60,6 +61,7 @@ function PlanMenu({myList, setMyList}) {
                 setMyList = {setMyList}
                 myList={myList}/>
             </div>
+            <br />
             <div>
                 <MyList
                 mealPlans = {mealPlans}

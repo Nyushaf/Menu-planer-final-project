@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import ControlledCarouselTwo from './SliderTwo';
-import search from './search-1.png';
-import cutlery from './cutlery.png'
+import search from './Image/search-1.png';
+import cutlery from './Image/cutlery.png'
 import RecipeComponent from './RecipeComponent';
 import Swal from 'sweetalert2';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
@@ -41,7 +41,7 @@ function Recipes() {
     
     
     return(
-        <div>
+        <div className='recipe-container'>
             <div className="big-container">
                 <div className='container-find'>
                     <div className="center">

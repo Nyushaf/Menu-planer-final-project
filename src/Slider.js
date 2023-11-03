@@ -13,10 +13,15 @@ return (
         {data.map((slide, i) => {
         return (
         <Carousel.Item key={i} interval={2000}>
-            <img src={slide.image} alt='slide' width="600px"/>
+            <img className='carouselImg' src={slide.image} alt='slide' width="600px"/>
             <Carousel.Caption>
-                <div className='clider-text'>
-                    <p>{slide.text}</p>
+                <div>
+                    
+                    <a className='sliderLink' href={slide.link}>
+                        <div className='clider-text'>
+                            <p>{slide.text}</p>
+                        </div></a>
+                    
                 </div>
             </Carousel.Caption>
         </Carousel.Item>

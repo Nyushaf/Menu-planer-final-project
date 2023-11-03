@@ -22,7 +22,7 @@ const MyMealsAndIngredients = ({selectedDay, updateDay, setMyList, myList}) => {
 
     if (!selectedDay) return <h3 className="center cont-started">Get Started!</h3>
     return(
-        <div>
+        <div className="container-meals-and-ingr">
             <div className="cont-input">
                 <input 
                 type="text"
@@ -35,8 +35,9 @@ const MyMealsAndIngredients = ({selectedDay, updateDay, setMyList, myList}) => {
             </div>
             <div className="cont-textarea">
             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">✦ Add your meai for the day</Tooltip>}>
-                <span className="d-inline-block textarea">
+                <span className="d-inline-block textarea-span">
                 <textarea 
+                className="textarea"
                 placeholder="Write your meal plan here..."
                 id="mealForADay"
                 value={selectedDay.mealForADay}
@@ -46,8 +47,9 @@ const MyMealsAndIngredients = ({selectedDay, updateDay, setMyList, myList}) => {
             </OverlayTrigger>
                 
             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">✦ Enter the ingredients separated by commas</Tooltip>}>
-                <span className="d-inline-block textarea">
+                <span className="d-inline-block textarea-span">
                 <textarea 
+                className="textarea"
                 placeholder="List of ingredients..."
                 id="ingredients"
                 value={selectedDay.ingredients}

@@ -14,7 +14,7 @@ return (
         {dataTwo.map((slide, i) => {
         return (
         <Carousel.Item key={i} interval={1500}>
-            <img src={slide.image} alt='slide' width="500px"/>
+            <img className='carouselImg' src={slide.image} alt='slide' width="500px"/>
             
         </Carousel.Item>
         )

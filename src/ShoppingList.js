@@ -1,6 +1,5 @@
-import delet from './delete.png';
-import print from './print.png';
-
+import delet from './Image/delete.png';
+import print from './Image/print.png';
 const ShoppingList = ({myList, setMyList}) => {
 
     const deletedItem = (itemToDeleted) => {
@@ -9,7 +8,7 @@ const ShoppingList = ({myList, setMyList}) => {
     }
     
     return(
-        <div>
+        <div className='recipe-container'>
             <div className="center">
                 <h2 className="cont-plan-meny">My Shopping List</h2>
             </div>
