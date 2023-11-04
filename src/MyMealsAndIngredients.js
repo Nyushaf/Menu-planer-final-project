@@ -34,7 +34,7 @@ const MyMealsAndIngredients = ({selectedDay, updateDay, setMyList, myList}) => {
                 />
             </div>
             <div className="cont-textarea">
-            <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">✦ Add your meai for the day</Tooltip>}>
+            <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">✦ Add your meal for the day</Tooltip>}>
                 <span className="d-inline-block textarea-span">
                 <textarea 
                 className="textarea"

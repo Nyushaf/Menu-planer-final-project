@@ -224,7 +224,6 @@ hr {
   flex-wrap: wrap;
 }
 .cont-day {
-  flex-grow: 1;
   width: 45%;
   margin: 10px;
 }
