@@ -7,6 +7,7 @@ import meal from './Image/meal.png';
 function PlanMenu({myList, setMyList}) {
     const [mealPlans, setMealPlans] = useState(
         localStorage.mealPlans ? JSON.parse(localStorage.mealPlans) : []);
+
     const [selectedDay, setSelectedDay] = useState(false);
 
     const uniqueId = () => {
@@ -57,9 +58,11 @@ function PlanMenu({myList, setMyList}) {
             <div>
                 <MyMealsAndIngredients
                 selectedDay = {getActiveMeal()}
+                setSelectedDay = {setSelectedDay}
                 updateDay = {updateDay}
                 setMyList = {setMyList}
-                myList={myList}/>
+                myList={myList}
+                />
             </div>
             <br />
             <div>

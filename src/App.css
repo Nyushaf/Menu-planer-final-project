@@ -166,7 +166,7 @@ h1 {
   justify-content: center;
   background-color: #FFFFFF;
   font-size: 15px;
-  width: 50%;
+  width: 70%;
   height: 70%;
   border-radius: 15px;
 }
@@ -181,7 +181,7 @@ li {
 .btn-ingr {
   font-size: 17px;
   font-weight: lighter;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #4f8679;
   border: none;
   border-radius: 10px;
@@ -227,6 +227,13 @@ hr {
   width: 45%;
   margin: 10px;
 }
+.cont-day:hover {
+  cursor: pointer;
+  background-color: #fcfaef;
+}
+.cont-day:hover .btn-delete-day {
+  background-color: #fcfaef;
+}
 .selected {
   border-radius: 20px;
   background-color: #fcfaef;
@@ -244,6 +251,9 @@ hr {
   margin: 5px;
   border: none;
   font-size: 12px;
+}
+.btn-delete-day:hover {
+  font-weight: bold;
 }
 .selected-btn {
   background-color: #fcfaef;
@@ -270,17 +280,19 @@ hr {
   border-radius: 10px;
   margin-top: 30px;
   background-color: #fcfaef;
-  border: 4px solid #4f8679;
+  border: 2px solid #4f8679;
+  font-weight: bolder;
 }
 .textarea-span {
-  width: 45%;
+  margin-top: 30px;
+  width: 65%;
 }
 .textarea {
-  border: 4px solid #4f8679;
+  border: 2px solid #4f8679;
   padding: 10px;
-  margin-top: 30px;
+  
   width: 100%;
-  height: 80px;
+  height: 100px;
   border-radius: 10px;
   margin-left: 5px;
   background-color: #fcfaef;
@@ -293,20 +305,17 @@ hr {
   margin-right: 30px;
   margin-top: 10px;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 10px;
   background-color: #4f8679;
-  color: #F7E987;
+  color: #fcfaef;
   border: none;
 }
 .cont-textarea {
   display: flex;
-  justify-content: space-around;
-}
-.cont-input {
-  display: flex;
   justify-content: center;
 }
+
 .cont-started {
   color: #F7E987;
   padding: 10px;
@@ -397,8 +406,9 @@ label {
   font-size: 30px;
 }
 .container-meals-and-ingr {
+  width: 80%;
   border-radius: 10px;
-  background-color: rgba(247, 234, 135, 0.197);
+  background-color: rgba(247, 234, 135, 0.564);
 }
 
 .container-input-nutrition {
@@ -526,4 +536,5 @@ h4 {
   .text-nutrition {
     font-size: 12px;
   }
+
 }
