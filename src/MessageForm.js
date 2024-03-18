@@ -24,7 +24,7 @@ function MessageForm () {
             <ValidationError prefix="Message" field="message" errors={state.errors} />
 
             <div className="center">
-            <button className="btm-send-message" type="submit" disabled={state.submitting}>SEND</button>
+            <button className="button" type="submit" disabled={state.submitting}>Send</button>
             <ValidationError errors={state.errors} />
             </div>
             
