@@ -20,19 +20,22 @@ import Login from './login';
 import Logout from './logout';
 import { useAuth0 } from '@auth0/auth0-react';
 import PlanMenuAuth from './PlanMenuAuth';
+import ShoppingListAuth from './ShoppingListAuth';
+import { getAllUserWeek } from './FetchWeek';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { isAuthenticated } = useAuth0();
-
+  const { isLoading, isAuthenticated } = useAuth0();
+  const [userWeek, setUserWeek] = useState([]);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
   const [myList, setMyList] = useState(
   localStorage.myList ? JSON.parse(localStorage.myList) : []);
-
-
+  const numberOfLiElementsPerWeek = userWeek.map(week => {
+    return week.days.flatMap(day => day.ingredients.split(',')).filter(ingredient => ingredient.trim() !== '').length;
+});
+  const totalLiElements = numberOfLiElementsPerWeek.reduce((total, count) => total + count, 0) - 1;
   useEffect(() => {
   localStorage.setItem("myList", JSON.stringify(myList))
 }, [myList]);
@@ -48,8 +51,11 @@ const [isScrolled, setIsScrolled] = useState(false);
       }
     });
   }, []);
-
-  const { isLoading  } = useAuth0();
+  const { user } = useAuth0();
+  const userId = user && user.sub ? user.sub.split('|').pop() : '';
+  useEffect(() => {
+    getAllUserWeek(userId, setUserWeek)
+}, [userId, setUserWeek]);
 
   if (isLoading) {
     return ( 
@@ -78,7 +84,7 @@ const [isScrolled, setIsScrolled] = useState(false);
             <NavLink to="/" className='link'>Home</NavLink>
             <NavLink to="/recipes" className='link'>Recipes</NavLink>
             <NavLink to="/menu" className='link'>Plan menu</NavLink>
-            <NavLink to="/shoppingList" className='link'>Shopping list <Badge className='count-items' bg="secondary">{myList.length}</Badge></NavLink>
+            <NavLink to="/shoppingList" className='link'>Shopping list <Badge className='count-items' bg="secondary">{isAuthenticated ? totalLiElements : myList.length}</Badge></NavLink>
           </nav>
           <Login isScrolled={isScrolled} />
           <Logout isScrolled={isScrolled} />
@@ -87,10 +93,10 @@ const [isScrolled, setIsScrolled] = useState(false);
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/recipes"element={<Recipes/>} />
-          <Route path="/menu" element={isAuthenticated ? <PlanMenuAuth/> : <PlanMenu 
+          <Route path="/menu" element={isAuthenticated ? <PlanMenuAuth userWeek={userWeek} setUserWeek={setUserWeek} userId={userId}/> : <PlanMenu 
           setMyList={setMyList}
           myList={myList}/>} />
-          <Route path="/shoppingList" element={<ShoppingList
+          <Route path="/shoppingList" element={isAuthenticated ? <ShoppingListAuth userWeek={userWeek} /> : <ShoppingList
           myList={myList}
           setMyList={setMyList}/>} />
           <Route path="/contact"element={<Contacts/>} />

@@ -4,9 +4,11 @@ body {
   margin: 0;
   padding: 0;
 }
-.test {
-  font-size: 50px;
-  color: #fcfaef;
+.main-cont {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .cont-nav {
   position: absolute;
@@ -562,23 +564,247 @@ h4 {
       transform: rotate(405deg);
   }
 }
+.tab {
+  background: #fcfaef;
+}
+.tab .input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.tab .input:checked ~ .tab__content {
+  max-height: 100rem;
+}
+.accordion {
+  color: #fcfaef;
+  border: 2px solid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.tab__label {
+  display: flex;
+  justify-content: space-between;
+  color: #252B48;
+  background: #fcfaef;
+  cursor: pointer;
+  padding: 1rem;
+}
+.tab__label::after {
+  content: "\276F";
+  margin-top: 12px;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+  font-size: 20px;
+}
+.tab .input:checked + .tab__label::after {
+  transform: rotate(270deg);
+}
+.tab__content p, h4 {
+  margin: 0;
+  padding: 1rem;
+}
+.tab__content p {
+  font-size: 18px;
+  color: #252B48;
+}
 
+.tab .input:not(:checked) + .tab__label:hover::after {
+  animation: bounce .5s infinite;
+}
+@keyframes bounce {
+  25% {
+    transform: rotate(90deg) translate(.25rem);
+  }
+  75% {
+    transform: rotate(90deg) translate(-.25rem);
+  }
+}
+.accordion-width {
+  width: 25%;
+}
+
+.main-container-for-weeks {
+  display: flex;
+  justify-content: space-between;
+} 
+.dayOfTheWeek {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+.ingredients {
+  align-self: center;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.inputForAWeek {
+  width: 250px;
+  font-size: 13px;
+}
+
+.form {
+  border-radius: 0.5rem ;
+  padding: 10px;
+  width: 47%;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: #fcfaef;
+}
+.delete-icon-position {
+  text-align: end;
+}
+.delete-icon:hover {
+  cursor: pointer;
+}
+.important {
+  color: red;
+  font-size: 20px;
+}
+.btn-save-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.weeks {
+  margin-left: 10px;
+  width: 30%;
+}
+.week-name-container {
+  display: flex;
+  justify-content: center;
+}
+
+.week-name {
+  font-weight: bold;
+  color: #252B48;
+  font-size: 18px;
+}
+select {
+  border: none;
+  font-size: 15px;
+  background-color: #fcfaef;
+  font-size: 17px;
+}
+.lableForAWeek {
+  color: #252B48;
+  font-size: 15px;
+} 
+.textareaForADay {
+  width: 90%;
+  height: 110px;
+}
+.day-name-style {
+  background: #445069;
+}
+.label-position {
+  margin-left: 20px;
+}
+.edit-delete-btn {
+  color:#252B48;
+}
+.edit-delete-btn:hover {
+  color: #F7E987;
+}
+.removeDay {
+  border: none;
+  color: red;
+  background: #fcfaef;
+  font-size: 13px;
+}
+.addNewDay {
+  background: #445069;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 15px;
+  color: #fcfaef;
+  padding: 5px 15px;
+  margin-top: 5px;
+}
+.removeDay:hover {
+  color: #252B48;
+}
+.saveWeekBtn {
+  background: #4f8679;
+  color: #F7E987;
+  padding: 5px;
+  width: 30%;
+  border: none;
+  border-radius: 0.5rem;
+}
+.quantity  {
+  width: 50px;
+  border: none;
+  border-bottom: 1px solid #252B48;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+}
+.qty {
+  width: 40px;
+  background: #fcfaef;
+  color: #252B48;
+}
+.styleIngredients {
+  margin-left: 5px;
+  color: #252B48;
+  font-weight: bolder;
+}
+.accordion-content {
+  margin-left: 30px;
+}
+.createPdf {
+  border: none;
+  background: #4f8679;
+  color: #fcfaef;
+  border-radius: 0.3rem;
+  padding: 5px;
+}
+@media (max-width: 1050px) {
+  .accordion-width {
+    width: 50%;
+  }
+}
+@media (max-width: 850px) {
+  .accordion-width {
+    width: 70%;
+  }
+  .weeks {
+    width: 40%;
+  }
+  .form {
+    width: 55%;
+  }
+  .inputForAWeek {
+    width: 200px;
+  }
+}
 @media (max-width: 800px) {
   .mobile-only {
     display: block; 
   }
-  
+  .accordion-width {
+    width: 70%;
+  }
   .my-navbar {
     display: none;
   }
-  
   .my-navbar.open {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     transition: 0.3s ease;
   }
-
   .dish-imgr {
     display: none;
   }
@@ -588,8 +814,18 @@ h4 {
   .btn-login-logout {
     background-color: #252B48;
   }
+  .weeks {
+    width: 40%;
+  }
+  .form {
+    width: 55%;
+  }
+  .inputForAWeek {
+    width: 200px;
+  }
 
 }
+
 @media (max-width: 500px) {
   .carouselImg {
     width: 350px;
@@ -666,6 +902,23 @@ h4 {
   }
   .btn-login-logout {
     background-color: #252B48;
+  }
+  .accordion-width {
+    width: 80%;
+  }
+  .plan-menu-position {
+    display: flex;
+    flex-direction: column;
+  }
+  .weeks {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .form {
+    width: 90%;
+  }
+  .inputForAWeek {
+    width: 170px;
   }
 
 }
