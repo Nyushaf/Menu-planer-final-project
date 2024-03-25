@@ -14,7 +14,6 @@ import menu from './Image/menu.png';
 import Login from './login';
 import Logout from './logout';
 import { useAuth0 } from '@auth0/auth0-react';
-//import { getAllUserWeek } from './FetchWeek';
 import Home from "./HomeComponents/Home";
 import Recipes from "./RecipesComponents/Recipes";
 import PlanMenu from "./MenuComponents/PlanMenu";
@@ -61,14 +60,6 @@ function MainComponent() {
     useEffect(() => {
         getAllUserWeek(userId, setUserWeek)
     }, [userId, setUserWeek]);
-    /*if (isLoading) {
-        return ( 
-            <div className="loader">
-                Loading
-                <span></span>
-            </div>
-        );
-    }*/
     return (
         <div className='main-cont'>
             <div>

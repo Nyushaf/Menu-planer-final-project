@@ -15,8 +15,6 @@ function PlanMenuAuth ({userWeek, setUserWeek, userId}) {
     const [weekName, setWeekName] = useState('');
     const [days, setDays] = useState([{ id: uuidv4(), dayName: '', breakfast: '', lunch: '', dinner: '', ingredients: '' }]);
     const [isSaveEnabled, setIsSaveEnabled] = useState(false);
-    /*const { user } = useAuth0();
-    const userId = user && user.sub ? user.sub.split('|').pop() : '';*/
     const addDay = () => {
         setDays([...days, { id: uuidv4(), dayName: '', breakfast: '', lunch: '', dinner: '', ingredients: '' }]);
     };

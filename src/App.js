@@ -3,8 +3,6 @@ import './App.css';
 import MainComponent from './MainComponent';
 import { Loader } from './Loader';
 
-
-
 function App() {
   const { isLoading } = useAuth0();
   
