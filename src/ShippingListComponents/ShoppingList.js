@@ -1,5 +1,6 @@
-import delet from './Image/delete.png';
-import print from './Image/print.png';
+import './ShoppingList.css';
+import delet from '../Image/delete.png';
+import print from '../Image/print.png';
 const ShoppingList = ({myList, setMyList}) => {
 
     const deletedItem = (itemToDeleted) => {

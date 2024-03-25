@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
-import search from './Image/search-1.png';
+import search from '../Image/search-1.png';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
@@ -17,6 +17,7 @@ function NutritionAnalysis() {
         e.preventDefault();
         setWordSubmitted(mySearch);
     }
+    
     const getData = async(ingredient) => {
         const response = await fetch(`https://api.edamam.com/api/nutrition-details?app_id=773d9493&app_key=3c0a2d374f41dd7a43272c2798ea81ae`, {
             method: "POST",
@@ -64,7 +65,7 @@ function NutritionAnalysis() {
                 </div>
                 <div className="container-nutrition-result">
                     <div className="position-nutrition-result">
-                        <h4 className="center">{wordSubmitted}</h4>
+                        <h4 className="center nutrition-header-text">{wordSubmitted}</h4>
                     {myNutrition && Object.values(myNutrition.totalNutrients).map(({label, quantity, unit}, index) => (
                         <div key = {index} className='center'>
                             <p className="text-nutrition"><b>{label}</b> - {quantity.toFixed(1)} {unit}</p>

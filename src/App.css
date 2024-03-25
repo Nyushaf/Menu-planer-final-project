@@ -20,7 +20,6 @@ nav {
   display: flex;
   background: #445069;
   justify-content: center;
-  
 }
 .mobile-only {
   display: none; 
@@ -61,9 +60,6 @@ nav {
 .btn-scrolled-log {
   background: hsla(221, 21%, 34%, 0)
 }
-.home-container {
-  margin-top: 73px;
-}
 .recipe-container {
   margin-top: 80px;
 }
@@ -76,96 +72,43 @@ h1 {
   font-size: 40px;
   
 }
-.welcome-container {
-  background-color: #fcfaef;
-  margin: 0;
-  height: 110px;
-}
 .center {
   display: flex;
   justify-content: center;
 }
-.about-color {
-  background-color: #fcfaef;
-}
-.how-to-use {
-  font-weight: bolder;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  color: #252B48;
-}
-.about-cont {
-  display: flex;
-  flex-wrap: wrap;
-}
 .about {
   flex: 1;
   margin: 9px;
-}
-.carusel-container {
-  margin-top: 10px;
-  width: 600px;
 }
 .sliderLink {
   text-decoration: none;
   color: #fcfaef;
   font-size: 23px;
 }
-
-.clider-text {
+.slider-text {
   background-color: #44506968;
   padding: 15px;
 }
 .footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #445069;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #445069;
+  margin-top: 30px;
 }
 .cont-footer {
   align-self: center;
   color: #fff;
   margin-bottom: 5px;
 }
-.big-container {
-  margin-top: 8px;
-  display: flex;
-  justify-content: space-around;
-}
-.container-find {
-  align-self: center;
-}
-.text {
-  color: #4f8679;
-  font-size: 17px;
-}
-.search {
-  padding: 13px;
-  font-size: 20px;
-  font-weight: bolder;
-  margin: 10px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.715);
-}
-
-.header-find, .cont-plan-meny {
+.cont-plan-meny {
   font-size: 50px;
   margin-bottom: 40px;
   color: #fcfaef;
-}
-.cont-plan-meny {
   margin-top: 15px;
-}
-.cont-input {
-  display: flex;
 }
 .btn-search {
   background-color: #252B48;
   border: none;
-}
-.carusel-container-two {
-  width: 500px;
 }
 .my_modal {
   position: fixed;
@@ -174,7 +117,6 @@ h1 {
   right: 0;
   left: 0;
 }
-  
 .my_overlay {
   display: flex;
   align-items: center;
@@ -183,7 +125,6 @@ h1 {
   width: 100%;
   height: 100%;
 }
-  
 .my_modal_content {
   display: flex;
   flex-direction: column;
@@ -195,13 +136,8 @@ h1 {
   height: 70%;
   border-radius: 15px;
 }
-
 li {
   list-style: square;
-}
-.recipes-container {
-  display: flex;
-  flex-wrap: wrap;
 }
 .btn-ingr {
   font-size: 17px;
@@ -211,158 +147,6 @@ li {
   border: none;
   border-radius: 10px;
   color: #fcfaef;
-}
-.recipe-img {
-  border-radius: 20px;
-}
-.calories {
-  font-size: 20px;
-  color: #F7E987;
-}
-.recipe-card {
-  display: flex;
-  flex-direction: column;
-  padding: 2%;
-  flex-grow: 1;
-  flex-basis: 16%;
-  justify-content: flex-end;
-}
-.container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.recipe-name {
-  color: #fcfaef;
-  text-shadow: 2px 2px black;
-}
-hr {
-  color: #F7E987;
-  width: 90%;
-}
-.hr-container {
-  display: flex;
-  justify-content: center;
-}
-.cont-week-menu {
-  display: flex;
-  flex-wrap: wrap;
-}
-.cont-day {
-  width: 45%;
-  margin: 10px;
-}
-.cont-day:hover {
-  cursor: pointer;
-  background-color: #fcfaef;
-}
-.cont-day:hover .btn-delete-day {
-  background-color: #fcfaef;
-}
-.selected {
-  border-radius: 20px;
-  background-color: #fcfaef;
-  border: 4px solid #4f8679;
-  padding: 2px;
-  margin-top: 5px;
-}
-.default {
-  border-radius: 20px;
-  background-color: rgb(201, 201, 201);
-  padding: 2px;
-  margin-top: 5px;
-}
-.btn-delete-day {
-  margin: 5px;
-  border: none;
-  font-size: 12px;
-}
-.btn-delete-day:hover {
-  font-weight: bold;
-}
-.selected-btn {
-  background-color: #fcfaef;
-}
-.default-btn {
-  background-color: rgb(201, 201, 201);
-}
-.title {
-  margin: 3px;
-  font-size: 14px;
-}
-.title-day {
-  font-size: 16px;
-  font-weight: bolder;
-}
-.meal {
-  font-size: 14px;
-}
-.myInput {
-  margin-left: 10px;
-  width: 20%;
-  padding: 10px;
-  height: 40px;
-  border-radius: 10px;
-  margin-top: 30px;
-  background-color: #fcfaef;
-  border: 2px solid #4f8679;
-  font-weight: bolder;
-}
-.textarea-span {
-  margin-top: 30px;
-  width: 65%;
-}
-.textarea {
-  border: 2px solid #4f8679;
-  padding: 10px;
-  
-  width: 100%;
-  height: 100px;
-  border-radius: 10px;
-  margin-left: 5px;
-  background-color: #fcfaef;
-}
-.btn-position {
-  display: flex;
-  justify-content: flex-end;
-}
-.btn-add-to-list {
-  margin-right: 30px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 10px 15px;
-  border-radius: 10px;
-  background-color: #4f8679;
-  color: #fcfaef;
-  border: none;
-}
-.cont-textarea {
-  display: flex;
-  justify-content: center;
-}
-
-.cont-started {
-  color: #F7E987;
-  padding: 10px;
-  margin: 15px;
-}
-.container-shoppingList {
-  display: flex;
-  justify-content: center;
-}
-.cont-shopping-color {
-  background-color: #fcfaef;
-  width: 500px;
-  padding: 20px;
-  border-radius: 15px;
-}
-ol {
-  font-size: 17px;
-  font-weight: bold;
-}
-.item {
-  font-weight: bold;
-  font-size: 15px;
 }
 li {
   padding: 5px;
@@ -379,22 +163,6 @@ li {
   font-size: 13px;
   font-weight: bold;
 }
-.btn-delete-item {
-  border: none;
-  background-color: #fcfaef;
-}
-.btn-print-list {
-  background-color: #F7E987;
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  margin-left: 15px;
-}
-.cont-li {
-  display: flex;
-  justify-content: space-between;
-}
-
 .send-message {
   display: flex;
   flex-direction: column;
@@ -416,7 +184,6 @@ label {
   color: #F7E987;
   margin-left: 10px;
 }
-
 .button{
   width: 40%;
   cursor: pointer;
@@ -449,45 +216,10 @@ label {
     box-shadow: 0px 0px 3px #396158;
   }
 }
-
 .submited-form {
   color: #F7E987;
   font-size: 30px;
 }
-.container-meals-and-ingr {
-  width: 80%;
-  border-radius: 10px;
-  background-color: rgba(247, 234, 135, 0.564);
-}
-
-.container-input-nutrition {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.input-nutrition {
-  padding: 13px;
-  font-size:18px;
-  font-weight: bolder;
-  margin: 10px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.715);
-  width: 300px;
-}
-
-.container-nutrition-result {
-  display: flex;
-  justify-content: center;
-}
-
-.position-nutrition-result {
-  background-color: #fcfaef;
-  width: 500px;
-  padding: 10px;
-}
-
 h4 {
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -628,173 +360,13 @@ h4 {
     transform: rotate(90deg) translate(-.25rem);
   }
 }
-.accordion-width {
-  width: 25%;
-}
-
-.main-container-for-weeks {
-  display: flex;
-  justify-content: space-between;
-} 
-.dayOfTheWeek {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 15px;
-}
-.ingredients {
-  align-self: center;
-  margin-top: 12px;
-  margin-left: 20px;
-}
-
-.inputForAWeek {
-  width: 250px;
-  font-size: 13px;
-}
-
-.form {
-  border-radius: 0.5rem ;
-  padding: 10px;
-  width: 47%;
-  margin-right: 10px;
-  margin-left: 10px;
-  background: #fcfaef;
-}
-.delete-icon-position {
-  text-align: end;
-}
-.delete-icon:hover {
-  cursor: pointer;
-}
-.important {
-  color: red;
-  font-size: 20px;
-}
-.btn-save-container {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-}
-.weeks {
-  margin-left: 10px;
-  width: 30%;
-}
-.week-name-container {
-  display: flex;
-  justify-content: center;
-}
-
-.week-name {
-  font-weight: bold;
-  color: #252B48;
-  font-size: 18px;
-}
-select {
-  border: none;
-  font-size: 15px;
-  background-color: #fcfaef;
-  font-size: 17px;
-}
-.lableForAWeek {
-  color: #252B48;
-  font-size: 15px;
-} 
-.textareaForADay {
-  width: 90%;
-  height: 110px;
-}
-.day-name-style {
-  background: #445069;
-}
-.label-position {
-  margin-left: 20px;
-}
-.edit-delete-btn {
-  color:#252B48;
-}
-.edit-delete-btn:hover {
-  color: #F7E987;
-}
-.removeDay {
-  border: none;
-  color: red;
-  background: #fcfaef;
-  font-size: 13px;
-}
-.addNewDay {
-  background: #445069;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 15px;
-  color: #fcfaef;
-  padding: 5px 15px;
-  margin-top: 5px;
-}
-.removeDay:hover {
-  color: #252B48;
-}
-.saveWeekBtn {
-  background: #4f8679;
-  color: #F7E987;
-  padding: 5px;
-  width: 30%;
-  border: none;
-  border-radius: 0.5rem;
-}
-.quantity  {
-  width: 50px;
-  border: none;
-  border-bottom: 1px solid #252B48;
-  background-color: transparent;
-  color: inherit;
-  outline: none;
-}
-.qty {
-  width: 40px;
-  background: #fcfaef;
-  color: #252B48;
-}
-.styleIngredients {
-  margin-left: 5px;
-  color: #252B48;
-  font-weight: bolder;
-}
 .accordion-content {
   margin-left: 30px;
 }
-.createPdf {
-  border: none;
-  background: #4f8679;
-  color: #fcfaef;
-  border-radius: 0.3rem;
-  padding: 5px;
-}
-@media (max-width: 1050px) {
-  .accordion-width {
-    width: 50%;
-  }
-}
-@media (max-width: 850px) {
-  .accordion-width {
-    width: 70%;
-  }
-  .weeks {
-    width: 40%;
-  }
-  .form {
-    width: 55%;
-  }
-  .inputForAWeek {
-    width: 200px;
-  }
-}
+
 @media (max-width: 800px) {
   .mobile-only {
     display: block; 
-  }
-  .accordion-width {
-    width: 70%;
   }
   .my-navbar {
     display: none;
@@ -808,40 +380,14 @@ select {
   .dish-imgr {
     display: none;
   }
-  .big-container {
-    flex-wrap: wrap;
-  }
   .btn-login-logout {
     background-color: #252B48;
   }
-  .weeks {
-    width: 40%;
-  }
-  .form {
-    width: 55%;
-  }
-  .inputForAWeek {
-    width: 200px;
-  }
-
 }
 
 @media (max-width: 500px) {
   .carouselImg {
     width: 350px;
-  }
-  .carusel-container, .carusel-container-two {
-    width: 350px;
-  }
-  .welcome-text {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .welcome-container {
-    height: 80px;
-  }
-  .home-container {
-    margin-top: 40px;
   }
   .recipe-container {
     margin-top: 50px;
@@ -850,24 +396,8 @@ select {
     text-align: center;
     font-size: 30px;
   }
-  .myInput {
-    width: 70%;
-  }
-  .cont-textarea {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .textarea-span {
-    width: 90%;
-  }
-  .textarea {
-    height: 100px;
-  }
   .cont-shopping-color {
     width: 350px;
-  }
-  .cont-day {
-    width: 95%;
   }
   .cont-footer {
     font-size: 12px;
@@ -881,16 +411,6 @@ select {
   .contact-link {
     font-size: 15px;
   }
-  .position-nutrition-result {
-    width: 330px;
-  }
-  .input-nutrition {
-    font-size: 15px;
-    width: 250px;
-  }
-  .text-nutrition {
-    font-size: 12px;
-  }
   .main-cont {
     position: relative;
   }
@@ -903,22 +423,4 @@ select {
   .btn-login-logout {
     background-color: #252B48;
   }
-  .accordion-width {
-    width: 80%;
-  }
-  .plan-menu-position {
-    display: flex;
-    flex-direction: column;
-  }
-  .weeks {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-  .form {
-    width: 90%;
-  }
-  .inputForAWeek {
-    width: 170px;
-  }
-
 }

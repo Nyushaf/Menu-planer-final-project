@@ -18,7 +18,7 @@ return (
                 <div>
                     
                     <a className='sliderLink' href={slide.link}>
-                        <div className='clider-text'>
+                        <div className='slider-text'>
                             <p>{slide.text}</p>
                         </div></a>
                     

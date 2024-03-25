@@ -1,0 +1,275 @@
+.cont-week-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cont-day {
+    width: 45%;
+    margin: 10px;
+}
+.cont-day:hover {
+    cursor: pointer;
+    background-color: #fcfaef;
+}
+.cont-day:hover .btn-delete-day {
+    background-color: #fcfaef;
+}
+.btn-delete-day {
+    margin: 5px;
+    border: none;
+    font-size: 12px;
+}
+.btn-delete-day:hover {
+    font-weight: bold;
+}
+.selected {
+    border-radius: 20px;
+    background-color: #fcfaef;
+    border: 4px solid #4f8679;
+    padding: 2px;
+    margin-top: 5px;
+}
+.default {
+    border-radius: 20px;
+    background-color: rgb(201, 201, 201);
+    padding: 2px;
+    margin-top: 5px;
+}
+.selected-btn {
+    background-color: #fcfaef;
+}
+.default-btn {
+    background-color: rgb(201, 201, 201);
+}
+.title {
+    margin: 3px;
+    font-size: 14px;
+}
+.title-day {
+    font-size: 16px;
+    font-weight: bolder;
+}
+.meal {
+    font-size: 14px;
+}
+.cont-started {
+    color: #F7E987;
+    padding: 10px;
+    margin: 15px;
+}
+.container-meals-and-ingr {
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgba(247, 234, 135, 0.564);
+}
+.cont-textarea {
+    display: flex;
+    justify-content: center;
+}
+.myInput {
+    margin-left: 10px;
+    width: 20%;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #fcfaef;
+    border: 2px solid #4f8679;
+    font-weight: bolder;
+}
+.textarea-span {
+    margin-top: 30px;
+    width: 65%;
+}
+.textarea {
+    border: 2px solid #4f8679;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 5px;
+    background-color: #fcfaef;
+}
+.btn-position {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-add-to-list {
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #4f8679;
+    color: #fcfaef;
+    border: none;
+}
+.main-container-for-weeks {
+    display: flex;
+    justify-content: space-between;
+}
+.weeks {
+    margin-left: 10px;
+    width: 30%;
+}
+.form {
+    border-radius: 0.5rem ;
+    padding: 10px;
+    width: 47%;
+    margin-right: 10px;
+    margin-left: 10px;
+    background: #fcfaef;
+}
+.delete-icon:hover {
+    cursor: pointer;
+}
+.delete-icon-position {
+    text-align: end;
+}
+.week-name-container {
+    display: flex;
+    justify-content: center;
+}
+.week-name {
+    font-weight: bold;
+    color: #252B48;
+    font-size: 18px;
+}
+select {
+    border: none;
+    font-size: 15px;
+    background-color: #fcfaef;
+    font-size: 17px;
+}
+.important {
+    color: red;
+    font-size: 20px;
+}
+.addNewDay {
+    background: #445069;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    color: #fcfaef;
+    padding: 5px 15px;
+    margin-top: 5px;
+}
+.btn-save-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.saveWeekBtn {
+    background: #4f8679;
+    color: #F7E987;
+    padding: 5px;
+    width: 30%;
+    border: none;
+    border-radius: 0.5rem;
+}
+.label-position {
+    margin-left: 20px;
+}
+.edit-delete-btn {
+    color:#252B48;
+}
+.edit-delete-btn:hover {
+    color: #F7E987;
+}
+.day-name-style {
+    background: #445069;
+}
+.dayOfTheWeek {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+.lableForAWeek {
+    color: #252B48;
+    font-size: 15px;
+}
+.inputForAWeek {
+    width: 250px;
+    font-size: 13px;
+}
+.removeDay {
+    border: none;
+    color: red;
+    background: #fcfaef;
+    font-size: 13px;
+}
+.removeDay:hover {
+    color: #252B48;
+}
+.ingredients {
+    align-self: center;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.textareaForADay {
+    width: 90%;
+    height: 110px;
+}
+
+@media (max-width: 850px) {
+    .weeks {
+        width: 40%;
+    }
+    .form {
+        width: 55%;
+    }
+    .inputForAWeek {
+        width: 200px;
+    }
+}
+@media (max-width: 800px) {
+    .weeks {
+        width: 40%;
+    }
+    .form {
+        width: 55%;
+    }
+    .inputForAWeek {
+        width: 200px;
+    }
+    .plan-menu-position {
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    .cont-day {
+        width: 95%;
+    }
+    .cont-textarea {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .plan-menu-position {
+        flex-wrap: wrap;
+    }
+    .myInput {
+        width: 70%;
+    }
+    .textarea-span {
+        width: 90%;
+    }
+    .textarea {
+        height: 100px;
+    }
+    .weeks {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .form {
+        width: 90%;
+    }
+    .inputForAWeek {
+        width: 170px;
+    }
+}
+
+
+
+
+

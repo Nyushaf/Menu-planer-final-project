@@ -1,11 +1,11 @@
+import './Menu.css';
 import { useCallback, useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { MyWeek } from './MyWeeks';
-import deleteIcon from './delete90.png';
-import meal from './Image/meal.png';
-//import { useAuth0 } from '@auth0/auth0-react';
-import { deleteWeek, editUserWeek, getAllUserWeek, saveUserWeek } from './FetchWeek';
+import deleteIcon from '../Image/delete90.png';
+import meal from '../Image/meal.png';
 import { MyDays } from './MyDays';
+import { deleteWeek, editUserWeek, getAllUserWeek, saveUserWeek } from './FetchWeek';
 
 
 function PlanMenuAuth ({userWeek, setUserWeek, userId}) {
@@ -44,10 +44,6 @@ function PlanMenuAuth ({userWeek, setUserWeek, userId}) {
         setIsSaveEnabled(checkFields());
     }, [weekName, days, checkFields]);
     
-    /*useEffect(() => {
-        getAllUserWeek(userId, setUserWeek)
-    }, [userId, setUserWeek]);*/
-    
     const handleSaveWeek = () => {
         saveUserWeek(userId, weekName, days)
         .then(() => {
@@ -61,7 +57,6 @@ function PlanMenuAuth ({userWeek, setUserWeek, userId}) {
             console.error('Error saving week:', error);
             alert('Something went wrong. Try again, please!')
         });
-
     };
     
     const handleEditWeek = (weekId, weekName, days) => {

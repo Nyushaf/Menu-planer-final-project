@@ -1,7 +1,9 @@
+import './Menu.css';
 import { useEffect, useState } from 'react';
-import MyList from './MyList';
+import meal from '../Image/meal.png';
 import MyMealsAndIngredients from './MyMealsAndIngredients';
-import meal from './Image/meal.png';
+import MyList from './MyList';
+
 
 
 function PlanMenu({myList, setMyList}) {

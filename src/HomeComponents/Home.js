@@ -1,16 +1,16 @@
-import ControlledCarousel from "./Slider";
+import './Home.css';
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { useEffect, useRef } from "react";
+import nutrition from "../Image/nutrition.jpg";
+import recipe from "../Image/recipes.jpg";
+import plan from "../Image/plan.jpg";
+import list from "../Image/list.jpg";
+import ControlledCarousel from "./Slider";
 import NutritionAnalysis from "./NutritionAnalusis";
-import nutrition from "./Image/nutrition.jpg";
-import recipe from "./Image/recipes.jpg";
-import plan from "./Image/plan.jpg";
-import list from "./Image/list.jpg";
 
 
 gsap.registerPlugin(TextPlugin);
-
 
 function Home() {
     const titleRef = useRef(null);
@@ -63,7 +63,7 @@ function Home() {
             </div>
             <br />
             <div className="container-nutrition" id="nutrition">
-                <NutritionAnalysis/>
+                <NutritionAnalysis />
             </div>
         </div>
             

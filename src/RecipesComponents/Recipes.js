@@ -1,7 +1,8 @@
+import './Recipes.css';
 import { useEffect, useState } from 'react';
 import ControlledCarouselTwo from './SliderTwo';
-import search from './Image/search-1.png';
-import cutlery from './Image/cutlery.png'
+import search from '../Image/search-1.png';
+import cutlery from '../Image/cutlery.png'
 import RecipeComponent from './RecipeComponent';
 import Swal from 'sweetalert2';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
